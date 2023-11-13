@@ -9,12 +9,11 @@ public class Logic {
  		return false;
 	}
 		
+	
 	/* return true if the characters at i for word and current display are the same */
 	public static boolean location(String word, String curr, int i) {
 		return false;
 	}
-	
-	
 	
 	/*
 	 * Return true if the guess matches the word
@@ -23,7 +22,7 @@ public class Logic {
 		//to be completed
 		return false;
 	}
-	
+
 	
 	/*
 	 * Return a String with only the characters that are in the right
@@ -32,7 +31,25 @@ public class Logic {
 	 * @param word - the 5-letter word that is being guessed
 	 * @param guess - the 5-letter guessed word
 	 */
-	public String getCorrect(String word, String guess) {
+	public static String getCorrect(String word, String guess) {
+		return "";
+	}
+	
+	/*
+	 * Return the characters that are in the word, but in the
+	 * wrong spots
+	 */
+	public static String getLetters(String word, String guess) {
+		
+		return "";
+		
+	} 
+	
+	/*
+	 * returns the characters from the guess that do not appear
+	 * in the word
+	 */
+	public static String dne(String word, String guess) {
 		return "";
 	}
 	

@@ -14,10 +14,11 @@ class LogicTester {
 		assertFalse(Logic.exists("alien", "x"));
 		
 		//test 2 - simple case 2
-		
-		
-		//test 3 - simple case 3
-		
+		assertTrue(Logic.exists("alien", "a"));
+
+ 		//test 3 - simple case 3
+		assertTrue(Logic.exists("alien", "n"));
+
 	
 		//Hard cases or corner cases that occur less often but are the
 		//majority of cases the programmers miss
@@ -32,27 +33,55 @@ class LogicTester {
 		
  	}
 	
+	@Test
+	void testGetCorrect() {
+		assertTrue(Logic.getCorrect("alien", "aloft").equals("al"));
+		assertTrue(Logic.getCorrect("tares", "tarts").equals("tar"));
+		assertTrue(Logic.getCorrect("tares", "cares").equals("ares"));
+
+	}
+	
+	@Test
+	void testGetLetters() {
+		assertTrue(Logic.getLetters("alien", "among").equals("n"));
+		assertTrue(Logic.getLetters("notes", "lists").equals("li"));
+		
+	}
+	
+	@Test
+	void testDne() {
+		assertTrue(Logic.getLetters("alien", "among").equals("amog"));
+		assertTrue(Logic.getLetters("notes", "lists").equals("li"));
+		
+	}
+	
+	
 	
 	@Test
 	void testLocation() {
-		fail("Not yet implemented");
+
+	
 	}
 	
 	@Test
 	void testGuessWord() {
-		fail("Not yet implemented");
+
+	
 	}
 	
 	
 	@Test
 	void testGetNext() {
-		fail("Not yet implemented");
+
+	
 	}
+	
 	
 	
 	@Test
 	void testIsWord() {
-		fail("Not yet implemented");
+
+		
 	}
 	
 
