@@ -14,6 +14,8 @@ public class Logic {
 		return false;
 	}
 	
+	
+	
 	/*
 	 * Return true if the guess matches the word
 	 */
@@ -21,7 +23,20 @@ public class Logic {
 		//to be completed
 		return false;
 	}
-
+	
+	
+	/*
+	 * Return a String with only the characters that are in the right
+	 * place. 
+	 * 
+	 * @param word - the 5-letter word that is being guessed
+	 * @param guess - the 5-letter guessed word
+	 */
+	public String getCorrect(String word, String guess) {
+		return "";
+	}
+	
+	
 	/*
 	 * Return a random number between 0 and total where
 	 * total is the total number of words in our 5-word dictionary. 
