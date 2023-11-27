@@ -402,10 +402,9 @@ public class BoardGUI extends JPanel implements KeyListener,   MouseListener{
 			//Update displayed colors
 			int i = 0; 
 			for(Tile t: b[row]) {
-				t.updateColor(Logic.location(word, curr, i++) ? 2 : t.state );
-			}
-			
-			
+				t.updateColor(Logic.location(word, curr, i) ? 2 : Logic.exists(word,curr.charAt(i)+"") ? 1 : t.state );
+				i++;
+			}			
 		
 			if( Logic.guessWord(word, curr)|| row >= 5 && col >= 5) {
 		        JLabel label = new JLabel();
