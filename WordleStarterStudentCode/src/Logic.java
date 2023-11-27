@@ -82,24 +82,28 @@ public class Logic {
 	 */
 	public static int getNext(int total, String usedList, ArrayList<String> dictionary) {
 		System.out.println(total+":"+usedList);
-		
+		return -1; //delete me once you're ready to implement me
 		//continue generating a random # between 0 and the the last possible 
 		//index (inclusive)
 		//check if it's in the used list!
 		//if not, good to go
 		//else generate another random number
 		
-		int next = /* math.random formula */
-		String word = dictionary.get(next);		
-		while(usedList.indexOf(word)!=-1) {
-			//generate another index
-			next = ?;
-			
-			//grab the word from the new index by updating word
-			word = ?;
-		}
-	
-		return next;
+		
+		/* uncomment 95 to 105 and fill it in if you need some helper code */
+		
+//		int next = /* math.random formula */
+//		String word = dictionary.get(next);		
+//		while(usedList.indexOf(word)!=-1) {
+//			//generate another index
+//			next = ?;
+//			
+//			//grab the word from the new index by updating word
+//			word = ?;
+//		}
+//	
+//		return next;
+		
 		
 	}
 	
